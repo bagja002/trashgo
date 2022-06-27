@@ -77,7 +77,7 @@ func Login(c *fiber.Ctx) error {
 		Foto:           user.Foto,
 		Title:          user.Title,
 	}
-
+	//hallo
 	jwtToken := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 	token, err := jwtToken.SignedString([]byte(SecretKey))
 
